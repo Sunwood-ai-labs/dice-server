@@ -1,6 +1,6 @@
 {
-  "name": "@makimaki/dice-server",
-  "version": "0.1.0",
+  "name": "@sunwood-ai-labs/dice-server-mcp",
+  "version": "0.1.1",
   "description": "サイコロを振るためのMCPサーバー",
   "type": "module",
   "bin": {
