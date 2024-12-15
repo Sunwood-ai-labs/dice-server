@@ -15,9 +15,6 @@
     "watch": "tsc --watch",
     "inspector": "npx @modelcontextprotocol/inspector build/index.js"
   },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "0.6.0"
-  },
   "devDependencies": {
     "@types/node": "^20.11.24",
     "typescript": "^5.3.3"
@@ -39,5 +36,8 @@
   "homepage": "https://github.com/makimaki/dice-server#readme",
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.0.3"
   }
 }

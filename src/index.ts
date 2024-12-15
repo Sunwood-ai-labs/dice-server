@@ -1,13 +1,13 @@
 #!/usr/bin/env node
-import { Server } from '@modelcontextprotocol/sdk';
-import { StdioServerTransport } from '@modelcontextprotocol/sdk';
+import { Server } from '@modelcontextprotocol/sdk/dist/server';
+import { StdioServerTransport } from '@modelcontextprotocol/sdk/dist/shared/stdio';
 import {
   CallToolRequestSchema,
   ErrorCode,
   ListToolsRequestSchema,
   McpError,
   CallToolRequest,
-} from '@modelcontextprotocol/sdk';
+} from '@modelcontextprotocol/sdk/dist/types';
 
 class DiceServer {
   private server: Server;
