@@ -13,9 +13,9 @@
     "resolveJsonModule": true,
     "baseUrl": ".",
     "paths": {
-      "@modelcontextprotocol/sdk/*": ["node_modules/@modelcontextprotocol/sdk/*"]
+      "@modelcontextprotocol/sdk/*": ["./node_modules/@modelcontextprotocol/sdk/*"]
     },
-    "typeRoots": ["./node_modules/@types", "./node_modules/@modelcontextprotocol/sdk/dist"]
+    "typeRoots": ["./node_modules/@types"]
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules"]

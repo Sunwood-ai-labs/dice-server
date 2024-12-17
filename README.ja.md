@@ -15,25 +15,25 @@
 
 # 🎲 Dice Server
 
-A Model Context Protocol (MCP) server for rolling dice
+MCPを使用してサイコロを振るためのサーバー
 
-## 🌟 Features
+## 🌟 特徴
 
-- Roll dice with any number of sides
-- Roll multiple dice simultaneously
-- Automatically calculate the total of all dice rolls
+- 任意の面数のサイコロを振ることができます
+- 複数のサイコロを同時に振ることができます
+- 結果の合計値も自動で計算されます
 
-## 🚀 Installation
+## 🚀 インストール
 
 ```bash
 npm install @makimaki/dice-server
 ```
 
-## 💡 Usage
+## 💡 使用方法
 
-### As an MCP Server
+### MCPサーバーとして使用
 
-1. Add the server to your Claude.app configuration file:
+1. Claude.appの設定ファイルにサーバーを追加:
 
 ```json
 {
@@ -46,19 +46,19 @@ npm install @makimaki/dice-server
 }
 ```
 
-2. Use it in Claude like this:
+2. Claudeで以下のように使用できます:
 
 ```
-Please use the roll_dice tool to roll two six-sided dice.
+roll_diceツールを使用して、6面ダイスを2個振ってください。
 ```
 
-### Direct Usage in Code
+### プログラムから直接使用
 
 ```typescript
 import { Server } from '@modelcontextprotocol/sdk';
 import { StdioServerTransport } from '@modelcontextprotocol/sdk';
 
-// Create server instance
+// サーバーのインスタンスを作成
 const server = new DiceServer();
 await server.run();
 ```
@@ -67,14 +67,14 @@ await server.run();
 
 ### roll_dice
 
-A tool for rolling dice
+サイコロを振るためのツール
 
-#### Parameters
+#### パラメータ
 
-- `sides` (number, optional): Number of sides on each die (default: 6)
-- `count` (number, optional): Number of dice to roll (default: 1, max: 10)
+- `sides` (number, optional): サイコロの面の数（デフォルト: 6）
+- `count` (number, optional): 振るサイコロの数（デフォルト: 1、最大: 10）
 
-#### Return Value
+#### 戻り値
 
 ```json
 {
@@ -84,9 +84,9 @@ A tool for rolling dice
 }
 ```
 
-## 🔧 Development
+## 🔧 開発
 
-### Setup
+### 環境構築
 
 ```bash
 git clone https://github.com/yourusername/dice-server.git
@@ -94,28 +94,28 @@ cd dice-server
 npm install
 ```
 
-### Running Tests
+### テスト実行
 
 ```bash
 npm test
 ```
 
-### Building
+### ビルド
 
 ```bash
 npm run build
 ```
 
-## 📝 License
+## 📝 ライセンス
 
 MIT
 
-## 👥 Contributing
+## 👥 コントリビューション
 
-Issues and Pull Requests are always welcome!
+Issue、Pull Requestはいつでも歓迎します！
 
-1. Fork this repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m '✨ feat: Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+1. このリポジトリをフォーク
+2. 新しいブランチを作成 (`git checkout -b feature/amazing-feature`)
+3. 変更をコミット (`git commit -m '✨ feat: 素晴らしい機能を追加'`)
+4. ブランチをプッシュ (`git push origin feature/amazing-feature`)
+5. Pull Requestを作成
